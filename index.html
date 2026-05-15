@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>한국어 점자 점 번호 변환기</title>
+    <link rel="stylesheet" href="./public/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace" aria-label="한국어 점자 변환기">
+        <header class="topbar">
+          <div>
+            <h1>한국어 점자 점 번호 변환기</h1>
+          </div>
+          <div class="status" id="status">0칸</div>
+        </header>
+
+        <div class="editor-grid">
+          <section class="pane input-pane">
+            <div class="pane-header">
+              <label for="sourceText">입력</label>
+              <button class="ghost-button" type="button" id="clearButton">지우기</button>
+            </div>
+            <textarea id="sourceText" spellcheck="false">나는 Apple 3개를 샀다!</textarea>
+          </section>
+
+          <section class="pane output-pane">
+            <div class="pane-header">
+              <div class="mode-tabs" role="tablist" aria-label="출력 형식">
+                <button class="mode-tab active" type="button" data-mode="dots">점 번호</button>
+                <button class="mode-tab" type="button" data-mode="analysis">분석</button>
+                <button class="mode-tab" type="button" data-mode="ascii">ASCII</button>
+                <button class="mode-tab" type="button" data-mode="plain">순수 분해</button>
+                <button class="mode-tab" type="button" data-mode="json">JSON</button>
+              </div>
+              <button class="primary-button" type="button" id="copyButton">복사</button>
+            </div>
+            <pre id="resultText" aria-live="polite"></pre>
+          </section>
+        </div>
+
+        <section class="preview-pane" aria-label="점자 칸 미리보기">
+          <div class="pane-header">
+            <h2>점자 칸</h2>
+            <span id="previewMeta">0칸</span>
+          </div>
+          <div class="braille-preview" id="braillePreview"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./src/hangul.js"></script>
+    <script src="./public/app.js"></script>
+  </body>
+</html>

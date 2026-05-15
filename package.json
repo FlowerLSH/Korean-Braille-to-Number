@@ -1,0 +1,14 @@
+{
+  "name": "korean-braille-to-number",
+  "version": "0.1.0",
+  "description": "Korean text decomposition utilities for braille translation preprocessing.",
+  "main": "src/hangul.js",
+  "bin": {
+    "korean-decompose": "bin/decompose.js"
+  },
+  "scripts": {
+    "start": "node bin/decompose.js",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
