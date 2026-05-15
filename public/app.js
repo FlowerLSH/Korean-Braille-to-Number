@@ -47,7 +47,7 @@
 
     for (let index = 1; index <= 6; index += 1) {
       const dot = document.createElement("span");
-      dot.className = dots.includes(String(index)) ? "dot filled" : "dot";
+      dot.className = dots.includes(String(index)) ? `dot dot-${index} filled` : `dot dot-${index}`;
       cell.appendChild(dot);
     }
 

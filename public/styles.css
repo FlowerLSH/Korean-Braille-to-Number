@@ -225,6 +225,36 @@ pre {
   background: var(--empty-dot);
 }
 
+.dot-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.dot-2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.dot-3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.dot-4 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.dot-5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.dot-6 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
 .dot.filled {
   background: var(--dot);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.18);
